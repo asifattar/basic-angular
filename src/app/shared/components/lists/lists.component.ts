@@ -7,7 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListsComponent implements OnInit {
 
-  skills : Array<string> = [`html`,`css`,`java`,`javascript`,`angular`]
+  skills : Array<string> = [`html`,`css`,`java`,`javascript`,`angular`];
+  stringArray: string[] = ["apple", "banana", "orange", "grape", "watermelon"];
+  mobile : string[] = ["iphone","samsung","onePlus","mi","oppo","realMe"];
+  city : string[] =["Delhi", "Mumbai", "Chennai", "Kolkata", "Bengaluru"];
+  
   constructor() { }
 
   ngOnInit(): void {

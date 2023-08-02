@@ -9,6 +9,8 @@ import { PropertyBindingComponent } from './shared/components/property-binding/p
 import { StringInterpolationComponent } from './shared/components/string-interpolation/string-interpolation.component';
 import { EventDataBaindingComponent } from './shared/components/event-data-bainding/event-data-bainding.component';
 import { TwoWaysDataBaindingComponent } from './shared/components/two-ways-data-bainding/two-ways-data-bainding.component';
+import { InterfaceComponent } from './shared/interface components/interface/interface.component';
+import { SetInputeValueComponent } from './shared/components/set-inpute-value/set-inpute-value.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { TwoWaysDataBaindingComponent } from './shared/components/two-ways-data-
     PropertyBindingComponent,
     StringInterpolationComponent,
     EventDataBaindingComponent,
-    TwoWaysDataBaindingComponent
+    TwoWaysDataBaindingComponent,
+    InterfaceComponent,
+    SetInputeValueComponent
   ],
   imports: [
     BrowserModule,

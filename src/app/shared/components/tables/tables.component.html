@@ -1,1 +1,64 @@
-<p>tables works!</p>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <table class="table table-bordered text-center table-hover">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Sr No</th>
+                        <th>Model Name</th>
+                        <th>Model No</th>
+                        <th>Price</th>
+                        <th>Camera</th>
+                        <th>Processer</th>
+                        <th>Battery</th>
+                        <th>Launch Date</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let i of products ; let n = index">
+                        <td>{{n+1}}</td>
+                        <td>{{i.productName}}</td>
+                        <td>{{i.modelNo}}</td>
+                        <td>{{i.price}}</td>
+                        <td>{{i.camera}}</td>
+                        <td>{{i.processor}}</td>
+                        <td>{{i.battery}}</td>
+                        <td>{{i.launchDate}}</td>
+                        <td>
+                            <button class="btn btn-success">Buy Now</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <h1 class="p-4 bg-warning text-capitalize  "> second table</h1>
+            <table class="table table-dark">
+                <thead>
+                    <tr>
+                        <th>sr no</th>
+                        <th>Name</th>
+                        <th>Material</th>
+                        <th>shape</th>
+                        <th>Daimensions</th>
+                        <th>Color</th>
+                        <th>Price</th>
+                        <th>InStock</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let p of tables ; let i = index">
+                        <th>{{i+1}}</th>
+                        <th>{{p.name}}</th>
+                        <th>{{p.material}}</th>
+                        <th>{{p.shape}}</th>
+                        <th>{{p.dimensions}}</th>
+                        <th>{{p.color}}</th>
+                        <th>{{p.price}}</th>
+                        <th>{{p.inStock}}</th>
+
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
